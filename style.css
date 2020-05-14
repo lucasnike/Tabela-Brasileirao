@@ -1,0 +1,50 @@
+#tabela-brasileirao {
+    width: 500px;
+    text-align: center;
+    border-collapse: collapse;
+    border: solid 2px #222222;
+    border-color: #222222;
+}
+
+tr > th {
+    background-color: #222222;
+    color: aliceblue;
+    font-weight: 600;
+    margin-bottom: 100px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #1f004d;
+    color: aliceblue;
+}
+
+th, td {
+    font-weight: 500;
+    padding: 7px;
+}
+
+tbody > :hover {
+    background-color: lightgray;
+    color: black;
+}
+
+button {
+    border: 0px;
+    border-radius: 100%;
+    padding: 7px;
+    margin: 10px;
+}
+.vit {
+    background-color: green;
+}
+.emp {
+    background-color: gold;
+}
+.der{
+    background-color: red;
+}
+
+.logos {
+    height: 20px;
+    margin-top: 5px;
+}
