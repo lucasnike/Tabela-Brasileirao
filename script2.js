@@ -4,139 +4,139 @@ const times = [
         time: "Flamengo",
         pts: 0,
         j: 0, 
-        src: './images/flamengo.png'
+        src: './images/flamengo.png', v : 0, e: 0, d:0
     },
     {
         p: 1,
         time: "Palmeiras",
         pts: 0,
-        j: 0, src: './images/palmeiras.png'
+        j: 0, src: './images/palmeiras.png', v : 0, e: 0, d:0
 
     },
     {
         p: 1,
         time: "Atlético-GO",
         pts: 0,
-        j: 0, src: './images/atletico-go.png'
+        j: 0, src: './images/atletico-go.png', v : 0, e: 0, d:0
 
     },
     {
         p: 1,
         time: "Internacional",
         pts: 0,
-        j: 0, src: './images/inter.png'
+        j: 0, src: './images/inter.png', v : 0, e: 0, d:0
 
     },
     {
         p: 1,
         time: "Fluminense",
         pts: 0,
-        j: 0, src: './images/flu.png'
+        j: 0, src: './images/flu.png', v : 0, e: 0, d:0
 
     },
     {
         p: 1,
         time: "Coritiba",
         pts: 0,
-        j: 0, src: './images/coritiba.png'
+        j: 0, src: './images/coritiba.png', v : 0, e: 0, d:0
 
     },
     {
         p: 1,
         time: "Bahia",
         pts: 0,
-        j: 0, src: './images/bahia.png'
+        j: 0, src: './images/bahia.png', v : 0, e: 0, d:0
 
     },
     {
         p: 1,
         time: "Athletico-PR",
         pts: 0,
-        j: 0, src: './images/cap.png'
+        j: 0, src: './images/cap.png', v : 0, e: 0, d:0
 
     },
     {
         p: 1,
         time: "Fortaleza",
         pts: 0,
-        j: 0, src: './images/for.png'
+        j: 0, src: './images/for.png', v : 0, e: 0, d:0
 
     },
     {
         p: 1,
         time: "Grêmio",
         pts: 0,
-        j: 0, src: './images/gre.png'
+        j: 0, src: './images/gre.png', v : 0, e: 0, d:0
 
     },
     {
         p: 1,
         time: "São paulo",
         pts: 0,
-        j: 0, src: './images/sp.png'
+        j: 0, src: './images/sp.png', v : 0, e: 0, d:0
 
     },
     {
         p: 1,
         time: "Goiás",
         pts: 0,
-        j: 0, src: './images/goias.png'
+        j: 0, src: './images/goias.png', v : 0, e: 0, d:0
 
     },
     {
         p: 1,
         time: "Atlético-MG",
         pts: 0,
-        j: 0, src: './images/mg.png'
+        j: 0, src: './images/mg.png', v : 0, e: 0, d:0
 
     },
     {
         p: 1,
         time: "Ceará",
         pts: 0,
-        j: 0, src: './images/ceara.png'
+        j: 0, src: './images/ceara.png', v : 0, e: 0, d:0
 
     },
     {
         p: 1,
         time: "Santos",
         pts: 0,
-        j: 0, src: './images/santos.png'
+        j: 0, src: './images/santos.png', v : 0, e: 0, d:0
 
     },
     {
         p: 1,
         time: "Botafogo",
         pts: 0,
-        j: 0, src: './images/fogo.png'
+        j: 0, src: './images/fogo.png', v : 0, e: 0, d:0
 
     },
     {
         p: 1,
         time: "Vasco",
         pts: 0,
-        j: 0, src: './images/colina.png'
+        j: 0, src: './images/colina.png', v : 0, e: 0, d:0
 
     },
     {
         p: 1,
         time: "Red Bull Bragantino",
         pts: 0,
-        j: 0, src: './images/braga.png'
+        j: 0, src: './images/braga.png', v : 0, e: 0, d:0
 
     },
     {
         p: 1,
         time: "Corinthians",
         pts: 0,
-        j: 0, src: './images/timao.png'
+        j: 0, src: './images/timao.png', v : 0, e: 0, d:0
 
     },
     {
         p: 1,
         time: "Sport",
         pts: 0,
-        j: 0, src: './images/sport.png'
+        j: 0, src: './images/sport.png', v : 0, e: 0, d:0
 
     }
 ]
@@ -155,12 +155,18 @@ function atualizarTabela() {
         let tdTime = document.createElement('td')
         let tdPts = document.createElement('td')
         let tdJogos = document.createElement('td')
+        let tdV = document.createElement('td')
+        let tdE = document.createElement('td')
+        let tdD = document.createElement('td')
         let logo = document.createElement('img')
         
         let p = document.createTextNode(`${times[i].p}º`)
         let time = document.createTextNode(`${times[i].time}`)
         let pts = document.createTextNode(`${times[i].pts}`)
         let jogos = document.createTextNode(`${times[i].j}`)
+        let v = document.createTextNode(`${times[i].v}`)
+        let e = document.createTextNode(`${times[i].e}`)
+        let d = document.createTextNode(`${times[i].d}`)
         
         logo.setAttribute('src', times[i].src)
         logo.setAttribute('class', 'logos')
@@ -170,12 +176,18 @@ function atualizarTabela() {
         tdTime.appendChild(time)
         tdPts.appendChild(pts)
         tdJogos.appendChild(jogos)
+        tdV.appendChild(v)
+        tdE.appendChild(e)
+        tdD.appendChild(d)
         
         tableRow.appendChild(tdP)
         tableRow.appendChild(logo)
         tableRow.appendChild(tdTime)
         tableRow.appendChild(tdPts)
         tableRow.appendChild(tdJogos)
+        tableRow.appendChild(tdV)
+        tableRow.appendChild(tdE)
+        tableRow.appendChild(tdD)
         
         tableBody.appendChild(tableRow)
 
@@ -214,17 +226,20 @@ function adicionarOnclickDasLinhas() {
             botoes[0].onclick = e => {
                 times[i].pts += 3
                 times[i].j++
+                times[i].v++
                 tableBody.innerHTML = ''
                 ordenarTabela()
             }
             botoes[1].onclick = e => {
                 times[i].pts++
                 times[i].j++
+                times[i].e++
                 tableBody.innerHTML = ''
                 ordenarTabela()
             }
             botoes[2].onclick = e => {
                 times[i].j++
+                times[i].d++
                 tableBody.innerHTML = ''
                 ordenarTabela()
             }
