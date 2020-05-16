@@ -221,6 +221,13 @@ function adicionarOnclickDasLinhas() {
             rows[i].appendChild(div)
 
             zerarOnclickDasLinhas()
+            document.querySelector('body').addEventListener('keydown', e => {
+                if (e.keyCode == 27) {
+                    tableBody.innerHTML = ''
+                    atualizarTabela()
+                    rows[i].removeChild(rows[i].lastChild)
+                }
+            })
 
             let botoes = document.querySelectorAll('button')
 

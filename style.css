@@ -9,29 +9,6 @@
     border: solid 2px #222222;
     border-color: #222222;
 }
-
-tr > th {
-    background-color: #222222;
-    color: whitesmoke;
-    font-weight: 600;
-    margin-bottom: 100px;
-}
-
-th, td {
-        padding: 7px;
-}
-
-tbody > :hover {
-    background-color: #9999ff;
-    color: white;
-}
-
-button {
-    border: 1px;
-    border-radius: 100%;
-    padding: 7px;
-    margin: 10px;
-}
 .vit {
     background-color: green;
 }
@@ -51,9 +28,32 @@ button {
     width: 18px;
     color: white;
 }
-tr {
-    border-bottom: solid 2px #222222;
-}
 .time {
     text-align: left;
+}
+
+tr > th {
+    background-color: #222222;
+    color: whitesmoke;
+    font-weight: 600;
+    margin-bottom: 100px;
+}
+
+th, td {
+    padding: 7px;
+}
+
+tbody > :hover {
+    background-color: #80ffd4;
+    color: #222222;
+}
+
+button {
+    border: 1px;
+    border-radius: 100%;
+    padding: 7px;
+    margin: 10px;
+}
+tr {
+    border-bottom: solid 2px #222222;
 }
