@@ -166,7 +166,7 @@ function atualizarTabela() {
         logo.setAttribute('class', 'logos')
         
         tdP.appendChild(p)
-        tdP.setAttribute('i', `${i + 1}`)
+        tdP.setAttribute('class', `posicao`)
         tdTime.appendChild(time)
         tdPts.appendChild(pts)
         tdJogos.appendChild(jogos)

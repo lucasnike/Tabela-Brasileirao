@@ -1,3 +1,7 @@
+* {
+    font-family: 'Baloo 2', cursive;
+}
+
 #tabela-brasileirao {
     width: 500px;
     text-align: center;
@@ -8,28 +12,22 @@
 
 tr > th {
     background-color: #222222;
-    color: aliceblue;
+    color: whitesmoke;
     font-weight: 600;
     margin-bottom: 100px;
 }
 
-tbody tr:nth-child(odd) {
-    background-color: #1f004d;
-    color: aliceblue;
-}
-
 th, td {
-    font-weight: 500;
-    padding: 7px;
+        padding: 7px;
 }
 
 tbody > :hover {
-    background-color: lightgray;
-    color: black;
+    background-color: #9999ff;
+    color: white;
 }
 
 button {
-    border: 0px;
+    border: 1px;
     border-radius: 100%;
     padding: 7px;
     margin: 10px;
@@ -47,4 +45,12 @@ button {
 .logos {
     height: 20px;
     margin-top: 5px;
+}
+.posicao {
+    background-color: #222222;
+    width: 18px;
+    color: white;
+}
+tr {
+    border-bottom: solid 2px #222222;
 }
