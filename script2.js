@@ -195,7 +195,8 @@ function atualizarTabela() {
         
     }
     adicionarOnclickDasLinhas()
-    table.style.width = '450px'
+    table.style.width = '100%'
+    //450px
 }
 
 atualizarTabela()
@@ -217,7 +218,8 @@ function adicionarOnclickDasLinhas() {
             div.appendChild(emp)
             div.appendChild(der)
 
-            table.style.width = '578px'
+            table.style.width = `calc(100% - ${div.style.width})`
+            // 578px
             rows[i].appendChild(div)
 
             zerarOnclickDasLinhas()
@@ -264,7 +266,7 @@ function zerarOnclickDasLinhas() {
 
 function ordenarTabela() {
     times.sort((timeA, timeB) => {
-        return timeA.pts > timeB.pts ? 1 : timeB.pts > timeA.pts ? -1 : 0
+        return timeA.pts < timeB.pts ? -1 : timeB.pts < timeA.pts ? 1 : 0
     })
     times.reverse()
     times.forEach( time => {
