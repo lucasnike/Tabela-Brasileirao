@@ -217,7 +217,7 @@ function adicionarOnclickDasLinhas() {
             div.appendChild(emp)
             div.appendChild(der)
 
-            table.style.width = '627px'
+            table.style.width = '578px'
             rows[i].appendChild(div)
 
             zerarOnclickDasLinhas()
