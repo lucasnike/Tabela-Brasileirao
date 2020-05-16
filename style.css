@@ -54,3 +54,6 @@ button {
 tr {
     border-bottom: solid 2px #222222;
 }
+.time {
+    text-align: left;
+}

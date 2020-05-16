@@ -170,6 +170,7 @@ function atualizarTabela() {
         
         logo.setAttribute('src', times[i].src)
         logo.setAttribute('class', 'logos')
+        tdTime.setAttribute('class', 'time')
         
         tdP.appendChild(p)
         tdP.setAttribute('class', `posicao`)
@@ -194,7 +195,7 @@ function atualizarTabela() {
         
     }
     adicionarOnclickDasLinhas()
-    table.style.width = '500px'
+    table.style.width = '450px'
 }
 
 atualizarTabela()
@@ -216,7 +217,7 @@ function adicionarOnclickDasLinhas() {
             div.appendChild(emp)
             div.appendChild(der)
 
-            table.style.width = '677px'
+            table.style.width = '627px'
             rows[i].appendChild(div)
 
             zerarOnclickDasLinhas()
