@@ -48,8 +48,11 @@ th, td {
 }
 
 tbody > :hover {
-    background-color: #80ffd4;
-    color: #222222;
+    /*#B5FFE1*/
+    /* #BFD1E5 */
+    /* #0466c8 */
+    background-color: #0496ff   ;
+    color: rgb(255, 255, 255);
 }
 
 button {
